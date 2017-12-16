@@ -8,6 +8,8 @@
 *
 * Date: Tue Aug 09 2011 10:45:54 GMT+0200 (CEST)
 */
+var fitText;
+
 (function(){
 
   var addEvent = function (el, type, fn) {
@@ -24,7 +26,7 @@
     return obj;
   };
 
-  window.fitText = function (el, kompressor, options) {
+  fitText = function (el, kompressor, options) {
 
     var settings = extend({
       'minFontSize' : -1/0,
@@ -58,3 +60,5 @@
     return el;
   };
 })();
+
+export {fitText};
